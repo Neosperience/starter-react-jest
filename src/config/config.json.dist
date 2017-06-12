@@ -7,7 +7,7 @@
     "name":"CUSTOMER_NAME"
   },
   "BaseURL": {
-    "listCards": "BASE_URL_FOR_CARD_SERVICE"
+    "endpoint": "BASE_URL_FOR_CARD_SERVICE"
   },
   "Authorization": {
     "Token": "TOKEN"
