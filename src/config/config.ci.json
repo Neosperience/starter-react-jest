@@ -1,0 +1,15 @@
+{
+  "Settings": {
+    "defaultLocale": "en"
+  },
+  "OrganizationSettings":{
+    "logo":"http://www.neosperience.com/hs-fs/hubfs/logo_60.png?t=1496069391209&width=336&name=logo_60.png",
+    "name":"Neosperience Spa"
+  },
+  "BaseURL": {
+    "card": "BASE_URL_FOR_CARD_SERVICE"
+  },
+  "Authorization": {
+    "Token": "TOKEN"
+  }
+}
