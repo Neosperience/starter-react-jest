@@ -4,7 +4,15 @@
   "displayName": "YOUR PROJECT DISPLAY NAME",
   "description": "Starter project for react. Please edit this package.json file and change it accordingly to your needs.",
   "main": "src/index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack --config webpack.prod.config.js",
+    "cover": "jest --coverage",
+    "lint": "eslint src/**/*.js",
+    "ci": "eslint src/**/*.js && jest --coverage",
+    "test": "cross-env NODE_ENV=test jest",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "start": "webpack-dev-server --config webpack.dev.config.js"
+  },
   "homepage": "https://your/project/homepage",
   "repository": {
     "type": "git",
