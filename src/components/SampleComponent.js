@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { connect } from 'react-redux';
-import { /* a set of actions to import */ } from '../actions';
+import { /* a set of actions to import */someAction } from '../actions';
 
 
 class SampleComponent extends React.Component {
 
     componentDidMount () {
-        this.props.action01();
+        this.props.someAction();
     }
 
 
@@ -25,4 +25,4 @@ function mapStateToProps ({ /* extract relevant property from state */ }) {
     return { /* return an object containing properties to map into this.props */ };
 }
 
-export default connect(mapStateToProps, { /* your actions here*/ })(SampleComponent);
+export default connect(mapStateToProps, { /* your actions here*/ someAction })(SampleComponent);
