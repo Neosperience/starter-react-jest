@@ -1,0 +1,28 @@
+image: node:7
+
+before_script:
+  - npm prune
+  - npm update -q
+  - cp src/config/config.json.dist src/config/config.json
+
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  script:
+    - NODE_ENV=ci npm run ci
+  cache:
+    key: "$CI_BUILD_REF_NAME"
+    paths:
+      - 'node_modules/'
+
+build:
+  stage: build
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - dist/
+  script:
+    - NODE_ENV=production npm run build

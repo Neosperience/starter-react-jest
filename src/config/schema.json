@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "Settings": {
+      "type": "object",
+      "properties": {
+        "defaultLocale": {
+          "type": "string"
+        },
+        "placeholder":{
+          "type":"string"
+        }
+      },
+      "required": [
+        "defaultLocale"
+      ]
+    },
+    "OrganizationSettings": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "type": "string"
+        },
+        "name":{
+          "type":"string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "BaseURL": {
+      "type": "object",
+      "properties": {
+        "endpoint": {
+          "type": "string"
+        }
+      }
+    },
+    "Authorization": {
+      "type": "object",
+      "properties": {
+      }
+    }
+  },
+  "required": [
+    "Settings",
+    "OrganizationSettings",
+    "BaseURL",
+    "Authorization"
+  ]
+}
