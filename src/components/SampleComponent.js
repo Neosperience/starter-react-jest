@@ -12,17 +12,17 @@ class SampleComponent extends React.Component {
 
 
     render () {
-        const { someVariable } = this.props; // extract required variable from props
+        const { someStateVariable } = this.props; // extract required variable from props
         return (
             <div>
-                {someVariable}
+                {/* render someStateVariable keys here */ someStateVariable !== undefined }
             </div>
         );
     }
 }
 
-function mapStateToProps ({ /* extract relevant property from state */ }) {
-    return { /* return an object containing properties to map into this.props */ };
+function mapStateToProps ({ /* extract relevant property from state */ someStateVariable }) {
+    return { /* return an object containing properties to map into this.props */ someStateVariable };
 }
 
 export default connect(mapStateToProps, { /* your actions here*/ someAction })(SampleComponent);
