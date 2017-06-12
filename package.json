@@ -59,6 +59,9 @@
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
+    "ajv": "^5.0.1",
+    "axios": "^0.16.1",
+    "lodash": "^4.17.4",
     "bootstrap": "^3.3.7",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
